@@ -9,6 +9,7 @@ def define_posicoes (linha, coluna, orientacao, tamanho):
 
     return posicoes
 
+
 def preenche_frota (dic_frota, nome_navio, linha, coluna, orientacao, tamanho):
     posicoes = define_posicoes(linha, coluna, orientacao, tamanho)
     if nome_navio not in dic_frota: 
@@ -17,4 +18,12 @@ def preenche_frota (dic_frota, nome_navio, linha, coluna, orientacao, tamanho):
     return dic_frota
 
 
+def faz_jogada (tabuleiro, linha, coluna):
+    celula = tabuleiro[linha][coluna]
+    if celula == 1:
+        tabuleiro[linha][coluna] = "X"
+    elif celula == 0:
+        tabuleiro[linha][coluna] = "-"
+
+    return tabuleiro
 
