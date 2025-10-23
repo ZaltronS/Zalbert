@@ -27,3 +27,17 @@ def faz_jogada (tabuleiro, linha, coluna):
 
     return tabuleiro
 
+def posiciona_frota (dic_frota):
+    tabuleiro = []
+    for i in range(10):
+        linha = [0] * 10
+        tabuleiro.append(linha)
+
+    for navio in dic_frota:
+        for um_navio in dic_frota[navio]:
+            for posicao in um_navio:
+                linha = posicao[0]
+                coluna = posicao[1]
+                tabuleiro[linha][coluna] = 1
+
+    return tabuleiro
