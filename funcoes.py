@@ -56,6 +56,7 @@ def afundados (dic_frota, tabuleiro):
 
     return afundados
 
+<<<<<<< HEAD
 def posicao_valida (dic_frota, linha, coluna, orientacao, tamanho): 
     posicoes = define_posicoes(linha, coluna, orientacao, tamanho)
 
@@ -72,3 +73,6 @@ def posicao_valida (dic_frota, linha, coluna, orientacao, tamanho):
                     return False
 
     return True 
+=======
+    
+>>>>>>> 434ea35fa61b1188af7286e1e32935cbc8c7cffd
